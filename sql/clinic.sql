@@ -110,13 +110,13 @@ DROP TABLE IF EXISTS `patient`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `patient` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `fisrt_name` varchar(45) DEFAULT NULL,
+  `first_name` varchar(45) DEFAULT NULL,
   `last_name` varchar(45) DEFAULT NULL,
   `age` varchar(45) DEFAULT NULL,
   `gender` varchar(45) DEFAULT NULL,
   `address` varchar(45) DEFAULT NULL,
   `city` varchar(45) DEFAULT NULL,
-  `phoneNumber` varchar(45) DEFAULT NULL,
+  `phone_number` varchar(45) DEFAULT NULL,
   `marital_status` varchar(45) DEFAULT NULL,
   `patient_type` varchar(45) DEFAULT NULL,
   `serial_number` varchar(45) DEFAULT NULL,
@@ -150,6 +150,7 @@ CREATE TABLE `receptionist` (
   `first_name` varchar(45) DEFAULT NULL,
   `last_name` varchar(45) DEFAULT NULL,
   `age` varchar(45) DEFAULT NULL,
+  `gender` varchar(45) DEFAULT NULL,
   `address` varchar(45) DEFAULT NULL,
   `city` varchar(45) DEFAULT NULL,
   `phone_number` varchar(45) DEFAULT NULL,
