@@ -295,7 +295,7 @@ public class RegisterReceptionist extends javax.swing.JFrame {
        Receptionist receptionist = new Receptionist( userName, password, firstName, lastName, age, gender, address, city, phonenumber, maritalStatus,null,null);
        boolean result = reImpl.registerReceptionist(firstName, lastName, age, gender, address, phonenumber, city, maritalStatus, userName, password);
        
-       if(!result){
+       if(result==true){
            JOptionPane.showMessageDialog(this, "Succesfully Register");
            new ReceptionistPortal().setVisible(true);
            this.setVisible(false);

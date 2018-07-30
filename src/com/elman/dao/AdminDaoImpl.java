@@ -17,33 +17,7 @@ import java.util.List;
 
 public  class AdminDaoImpl implements AdminDao{
 
-    
-    
-
-    @Override
-    public boolean updateLastLoginDateAdmin(int id) {
-       Connection con = null;
-       PreparedStatement ps = null;
-       ResultSet rs = null;
-       boolean result = false;
-       String sql = "update admin set last_login_date=? where id=?";
-          try {
-            con = DButil.getConnect();
-            ps = con.prepareStatement(sql);
-            ps.setString(1, LocalDateTime.now().toString());
-            ps.setInt(2, id);
-            ps.executeUpdate();
-            result = true;
-            
-            
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        finally{
-            DButil.closeAll(con, ps, rs);
-        }
-       return result;
-    }
+   
 
     @Override
     public Admin getAllAdmin(Admin admin) {
@@ -80,6 +54,33 @@ public  class AdminDaoImpl implements AdminDao{
         return admin;   
     
     }
+    
+    
+    @Override
+    public boolean updateLastLoginDateAdmin(int id) {
+       Connection con = null;
+       PreparedStatement ps = null;
+       ResultSet rs = null;
+       boolean result = false;
+       String sql = "update admin set last_login_date=? where id=?";
+          try {
+            con = DButil.getConnect();
+            ps = con.prepareStatement(sql);
+            ps.setString(1, LocalDateTime.now().toString());
+            ps.setInt(2, id);
+            ps.executeUpdate();
+            result = true;
+            
+            
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        finally{
+            DButil.closeAll(con, ps, rs);
+        }
+       return result;
+    }
+
 
     
    

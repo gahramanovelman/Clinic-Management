@@ -145,6 +145,10 @@ public class AdminPortal extends javax.swing.JFrame {
             }
         });
 
+        jLabelLastLoginDateAdmin.setBackground(new java.awt.Color(255, 255, 255));
+        jLabelLastLoginDateAdmin.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabelLastLoginDateAdmin.setForeground(new java.awt.Color(51, 102, 255));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -203,7 +207,7 @@ public class AdminPortal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonPatDetailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPatDetailsActionPerformed
-       new PatientDetailsAdmin().setVisible(true);
+       new PatientDetailsForAdmin().setVisible(true);
        this.setVisible(false);
     }//GEN-LAST:event_jButtonPatDetailsActionPerformed
 

@@ -18,7 +18,7 @@ public class DButil {
             Class.forName("com.mysql.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/clinic";
             String username = "root";
-            String password = "";
+            String password = "masterelman";
             connection = DriverManager.getConnection(url, username, password);        }
         catch(Exception e){
             e.printStackTrace();

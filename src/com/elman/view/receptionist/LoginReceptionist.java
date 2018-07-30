@@ -90,7 +90,6 @@ public class LoginReceptionist extends javax.swing.JFrame {
             }
         });
 
-        jButtonBack.setBackground(new java.awt.Color(255, 51, 51));
         jButtonBack.setFont(new java.awt.Font("Yu Gothic Medium", 0, 18)); // NOI18N
         jButtonBack.setForeground(new java.awt.Color(255, 255, 255));
         jButtonBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/elman/view/icons/back.png"))); // NOI18N

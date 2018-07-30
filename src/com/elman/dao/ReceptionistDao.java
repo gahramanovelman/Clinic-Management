@@ -8,10 +8,7 @@ package com.elman.dao;
 import com.elman.model.Receptionist;
 import java.util.List;
 
-/**
- *
- * @author Elman
- */
+
 public interface ReceptionistDao {
     
     boolean registerReceptionist(String first_name,String last_name,String age,String gender,String address,String phoneNumber,String city,String maritalStatus,String username,String password);

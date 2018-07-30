@@ -85,7 +85,7 @@ public class ReceptionistDetailsAdmin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBackActionPerformed
-        new PatientDetailsAdmin().setVisible(true);
+        new PatientDetailsForAdmin().setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButtonBackActionPerformed
 

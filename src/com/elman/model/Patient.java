@@ -6,6 +6,7 @@
 package com.elman.model;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 
@@ -24,12 +25,12 @@ public class Patient {
     private String serialNumber;
     private String wardNo;
     private String bedNo;
-    private LocalDate date;
+    private LocalDateTime date;
 
     public Patient() {
     }
 
-    public Patient(int id, String first_name, String last_name, String age, String gender, String address, String city, String phoneNumber, String maritalStatus, String patientType, String serialNumber, String wardNo, String bedNo, LocalDate date) {
+    public Patient(int id, String first_name, String last_name, String age, String gender, String address, String city, String phoneNumber, String maritalStatus, String patientType, String serialNumber, String wardNo, String bedNo, LocalDateTime date) {
         this.id = id;
         this.first_name = first_name;
         this.last_name = last_name;
@@ -151,11 +152,11 @@ public class Patient {
         this.bedNo = bedNo;
     }
 
-    public LocalDate getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
     

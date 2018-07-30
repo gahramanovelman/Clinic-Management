@@ -10,12 +10,10 @@ import java.util.List;
 
 
 public interface AdminDao {
-    
-    //public void insertAdmin(Admin admin);
-    
-    public boolean updateLastLoginDateAdmin(int id);
-    
+ 
      public Admin getAllAdmin(Admin admin);
+     
+      public boolean updateLastLoginDateAdmin(int id);
     
     
 }
